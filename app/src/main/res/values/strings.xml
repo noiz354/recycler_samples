@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">SeachApi</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Part 1-->
+    <string name="status">status</string>
+
+    <string name="error_code">error_code</string>
+    <string name="message">message</string>
+
+    <!-- Part 2-->
+    <string name="data">data</string>
+    <string name="id">id</string>
+    <string name="name">name</string>
+    <string name="uri">uri</string>
+    <string name="image_uri">image_uri</string>
+    <string name="price">price</string>
+    <string name="shop">shop</string>
+    <string name="is_gold">is_gold</string>
+    <string name="rating">rating</string>
+    <string name="speed">speed</string>
+    <string name="accuracy">accuracy</string>
+    <string name="service">service</string>
+    <string name="reputation_score">reputation_score</string>
+    <string name="location">location</string>
+    <string name="reputation_image_uri">reputation_image_uri</string>
+    <string name="count_min">count_min</string>
+    <string name="count_max">count_max</string>
+    <string name="shop_lucky">shop_lucky</string>
+    <string name="wholesale_price">wholesale_price</string>
+
+    <!-- Part 3-->
+    <string name="header">header</string>
+    <string name="total_data">total_data</string>
+    <string name="total_data_no_category">total_data_no_category</string>
+
+    <!-- Part 4-->
+    <string name="category">category</string>
+    <string name="parent_id">parent_id</string>
+    <string name="child_id">child_id</string>
+    <string name="level">level</string>
+    <string name="selected_id">selected_id</string>
+
+    <!-- Part 5-->
+    <string name="filter">filter</string>
+    <string name="q">q</string>
+
+</resources>
