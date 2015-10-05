@@ -7,6 +7,7 @@ import java.util.List;
  * Created by admin on 02/10/2015.
  */
 public class Data {
+    public static final String TAG = Data.class.getSimpleName();
     List<InnerData> datas;
 
     public Data(List<InnerData> datas) {
@@ -25,7 +26,12 @@ public class Data {
         this.datas = datas;
     }
 
+    public void addData(InnerData data){
+        this.datas.add(data);
+    }
+
     public static final class InnerData{
+        public static final String TAG = InnerData.class.getSimpleName();
         int id;
         String name;
         String uri;

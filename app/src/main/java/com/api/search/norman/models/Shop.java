@@ -4,6 +4,7 @@ package com.api.search.norman.models;
  * Created by admin on 02/10/2015.
  */
 public class Shop {
+    public static final String TAG = Shop.class.getSimpleName();
     int id;
     int is_gold;
     String name;

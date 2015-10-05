@@ -46,4 +46,6 @@ public class Rating {
     public void setReputation_score(int reputation_score) {
         this.reputation_score = reputation_score;
     }
+
+    public static final String TAG = Header.class.getSimpleName();
 }

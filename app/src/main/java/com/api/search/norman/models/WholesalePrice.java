@@ -4,9 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by admin on 02/10/2015.
+ * Created by m.normansyah on 02/10/2015.
  */
 public class WholesalePrice {
+    public static final String TAG = WholesalePrice.class.getSimpleName();
     List<Price> mPrices;
 
     public WholesalePrice(List<Price> mPrices) {
@@ -23,6 +24,10 @@ public class WholesalePrice {
 
     public void setPrices(List<Price> mPrices) {
         this.mPrices = mPrices;
+    }
+
+    public void addPrice(Price mPrice){
+        this.mPrices.add(mPrice);
     }
 
     public static class Price{

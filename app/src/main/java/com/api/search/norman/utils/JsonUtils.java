@@ -6,7 +6,10 @@ import android.util.JsonToken;
 import android.util.Log;
 
 import com.api.search.norman.R;
+import com.api.search.norman.models.Category;
 import com.api.search.norman.models.Data;
+import com.api.search.norman.models.Filter;
+import com.api.search.norman.models.Header;
 import com.api.search.norman.models.Rating;
 import com.api.search.norman.models.Shop;
 import com.api.search.norman.models.Status;
@@ -14,17 +17,19 @@ import com.api.search.norman.models.WholesalePrice;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by m.normansyah on 02/10/2015.
  */
-public class JsonUtils {
+public class JsonUtils implements  Constant.JsonUtilsConstant{
+    public static final String TAG = JsonUtils.class.getSimpleName();
 
-    public Object[] getStatus(Context mContext) throws IOException{
+    public static Object[] getJsonDataFromAssets(Context mContext) throws IOException{
         JsonReader mJsonReader = FactoryHelper.onJsonReaderCreate(FactoryHelper.getJsonExample(mContext));
 //        mJsonReader.nextName();
-        Object[] rets = new Object[5];
+        Object[] rets = new Object[LENGTH];
 
         mJsonReader.beginObject();
         Status status = new Status();
@@ -44,185 +49,242 @@ public class JsonUtils {
 
             Log.d(Constant.LOG, " masuk sini !!! " + a + " " + b + " " + c + " " + d);// +mJsonReader.nextName()+""+mJsonReader.nextName()
             mJsonReader.endObject();
-            rets[0] = status;
+            rets[STATUS] = status;
         }
+
         Data data = new Data();
         if(mJsonReader.nextName().equals(mContext.getString(R.string.data))){
-            Log.d(Constant.LOG, "masuk sini #2 !!! ");
+            Log.d(Constant.LOG+separator+Data.TAG, "start process "+Data.TAG);
 
             mJsonReader.beginArray();
             while(mJsonReader.hasNext()) {
+                Log.d(Constant.LOG+separator+Data.InnerData.TAG, "start process "+Data.InnerData.TAG);
                 Data.InnerData innerData = new Data.InnerData();
 
                 mJsonReader.beginObject();
-                int a = 0;
-                String b = null,c= null,d= null, e=null;
+                int id = 0;
+                String name = null,url= null,image_uri= null, price=null;
                 if (mJsonReader.nextName().equals(mContext.getString(R.string.id)))
-                    a=mJsonReader.nextInt();
+                    id=mJsonReader.nextInt();
                 if (mJsonReader.nextName().equals(mContext.getString(R.string.name)))
-                    b=mJsonReader.nextString();
+                    name=mJsonReader.nextString();
                 if (mJsonReader.nextName().equals(mContext.getString(R.string.uri)))
-                    c=mJsonReader.nextString();
+                    url=mJsonReader.nextString();
                 if (mJsonReader.nextName().equals(mContext.getString(R.string.image_uri)))
-                    d=mJsonReader.nextString();
+                    image_uri=mJsonReader.nextString();
                 if (mJsonReader.nextName().equals(mContext.getString(R.string.price)))
-                    e=mJsonReader.nextString();
+                    price=mJsonReader.nextString();
 
-                innerData.setId(a);
-                innerData.setName(b);
-                innerData.setUri(c);
-                innerData.setImageUri(d);
-                innerData.setPrice(e);
+                innerData.setId(id);
+                innerData.setName(name);
+                innerData.setUri(url);
+                innerData.setImageUri(image_uri);
+                innerData.setPrice(price);
 
-                Log.d(Constant.LOG, a + " " + b + " " + c + " " + d + " " + e);
+                Log.d(Constant.LOG+separator+Data.TAG, id + " " + name + " " + url + " " + image_uri + " " + price);
 
                 if (mJsonReader.nextName().equals(mContext.getString(R.string.shop))) {
-                    Log.d(Constant.LOG, "masuk sini #3 !!! ");
-                    int f = 0, g= 0, h=0, i=0;
+                    Log.d(Constant.LOG+separator+Shop.TAG, "start creating "+ Shop.TAG);
+                    int speed = 0, accuracy= 0, service=0, reputationScore=0;
                     Shop shop = new Shop();
                     mJsonReader.beginObject();
                     if (mJsonReader.nextName().equals(mContext.getString(R.string.id)))
-                        a=mJsonReader.nextInt();
+                        id=mJsonReader.nextInt();
                     if (mJsonReader.nextName().equals(mContext.getString(R.string.name)))
-                        b=mJsonReader.nextString();
+                        name=mJsonReader.nextString();
                     if (mJsonReader.nextName().equals(mContext.getString(R.string.uri)))
-                        c=mJsonReader.nextString();
+                        url=mJsonReader.nextString();
                     if (mJsonReader.nextName().equals(mContext.getString(R.string.is_gold)))
-                        f = mJsonReader.nextInt();
+                        speed = mJsonReader.nextInt();
 
-                    shop.setId(a);
-                    shop.setName(b);
-                    shop.setUri(c);
-                    shop.setIs_gold(f);
+                    shop.setId(id);
+                    shop.setName(name);
+                    shop.setUri(url);
+                    shop.setIs_gold(speed);
 
                     if(mJsonReader.nextName().equals(mContext.getString(R.string.rating))){
                         mJsonReader.beginObject();
+                        Log.d(Constant.LOG + separator + Rating.TAG, "start creating " + Rating.TAG);
                         Rating rating = new Rating();
                         if (mJsonReader.nextName().equals(mContext.getString(R.string.speed)))
-                            f = mJsonReader.nextInt();
+                            speed = mJsonReader.nextInt();
                         if (mJsonReader.nextName().equals(mContext.getString(R.string.accuracy)))
-                            g = mJsonReader.nextInt();
+                            accuracy = mJsonReader.nextInt();
                         if (mJsonReader.nextName().equals(mContext.getString(R.string.service)))
-                            h = mJsonReader.nextInt();
+                            service = mJsonReader.nextInt();
                         if (mJsonReader.nextName().equals(mContext.getString(R.string.reputation_score)))
-                            i = mJsonReader.nextInt();
+                            reputationScore = mJsonReader.nextInt();
 
-                        rating.setSpeed(f);
-                        rating.setAccuracy(g);
-                        rating.setService(h);
-                        rating.setReputation_score(i);
+                        rating.setSpeed(speed);
+                        rating.setAccuracy(accuracy);
+                        rating.setService(service);
+                        rating.setReputation_score(reputationScore);
                         shop.setRating(rating);
 
                         mJsonReader.endObject();
+                        Log.d(Constant.LOG + separator + Rating.TAG, "end creating " + Rating.TAG);
                     }
-                    Log.d(Constant.LOG, f + " " + g + " " + h + " " + i);
-                    String k=null,l=null,m=null;
+                    Log.d(Constant.LOG + separator + Rating.TAG, speed + " " + accuracy + " " + service + " " + reputationScore);
+                    String location=null,reputationImageUri=null,shopLucky=null;
                     if (mJsonReader.nextName().equals(mContext.getString(R.string.location)))
-                        k=mJsonReader.nextString();
+                        location=mJsonReader.nextString();
                     if (mJsonReader.nextName().equals(mContext.getString(R.string.reputation_image_uri)))
-                        l=mJsonReader.nextString();
+                        reputationImageUri=mJsonReader.nextString();
                     if (mJsonReader.nextName().equals(mContext.getString(R.string.shop_lucky)))
-                        m=mJsonReader.nextString();
+                        shopLucky=mJsonReader.nextString();
 
-                    shop.setLocation(k);
-                    shop.setReputationImageUri(l);
-                    shop.setShopLucky(m);
+                    shop.setLocation(location);
+                    shop.setReputationImageUri(reputationImageUri);
+                    shop.setShopLucky(shopLucky);
 
                     innerData.setShop(shop);
 
-                    Log.d(Constant.LOG, k + " " + l + " " + m );
+                    Log.d(Constant.LOG+separator+Shop.TAG, location + " " + reputationImageUri + " " + shopLucky);
+                    Log.d(Constant.LOG+separator+Shop.TAG, "end creating "+ Shop.TAG);
                     mJsonReader.endObject();
                 }
 
 
                 WholesalePrice wholesalePrice = null;
                 if(mJsonReader.hasNext() && mJsonReader.nextName().equals(mContext.getString(R.string.wholesale_price))){
+                    Log.d(Constant.LOG+separator+WholesalePrice.TAG, "start creating "+ WholesalePrice.TAG);
                     wholesalePrice = new WholesalePrice();
                     mJsonReader.beginArray();
                     while(mJsonReader.hasNext()){
                         mJsonReader.beginObject();
-                        int n = 0, o = 0, p = 0;
-                        WholesalePrice.Price price = new WholesalePrice.Price();
+                        int countMin = 0, countMax = 0, p = 0;
+                        WholesalePrice.Price aPrice = new WholesalePrice.Price();
                         if (mJsonReader.nextName().equals(mContext.getString(R.string.count_min)))
-                            n = mJsonReader.nextInt();
+                            countMin = mJsonReader.nextInt();
                         if (mJsonReader.nextName().equals(mContext.getString(R.string.count_max)))
-                            o = mJsonReader.nextInt();
-                        String q = null;
+                            countMax = mJsonReader.nextInt();
+                        String anoprice = null;
                         if (mJsonReader.nextName().equals(mContext.getString(R.string.price)))
-                            q = mJsonReader.nextString();
+                            anoprice = mJsonReader.nextString();
 
-                        price.setCount_min(n);
-                        price.setCount_max(o);
-                        price.setPrice(q);
-                        List<WholesalePrice.Price> prices = wholesalePrice.getPrices();
-                        prices.add(price);
-                        wholesalePrice.setPrices(prices);
+                        aPrice.setCount_min(countMin);
+                        aPrice.setCount_max(countMax);
+                        aPrice.setPrice(anoprice);
 
-                        Log.d(Constant.LOG, n+" "+o+" "+p);
+                        // TODO remove this if WholesalePrice.Price works
+//                        List<WholesalePrice.Price> prices = wholesalePrice.getPrices();
+//                        prices.add(aPrice);
+//                        wholesalePrice.setPrices(prices);
+
+                        wholesalePrice.addPrice(aPrice);
+
+                        Log.d(Constant.LOG + separator + WholesalePrice.TAG, countMin+" "+countMax+" "+p);
                         mJsonReader.endObject();
                     }
                     mJsonReader.endArray();
+                    Log.d(Constant.LOG + separator + WholesalePrice.TAG, "end creating " + WholesalePrice.TAG);
                 }
                 innerData.setWholesalePrice(wholesalePrice);
                 mJsonReader.endObject();
-                List<Data.InnerData> tmp = data.getDatas();
-                tmp.add(innerData);
-                data.setDatas(tmp);
+
+                // TODO remove this if works
+//                List<Data.InnerData> tmp = data.getDatas();
+//                tmp.add(innerData);
+//                data.setDatas(tmp);
+
+                data.addData(innerData);
             }
+            Log.d(Constant.LOG+separator+Data.InnerData.TAG, "end process "+Data.InnerData.TAG);
             mJsonReader.endArray();
         }
-        rets[1] = data;
+        rets[DATA] = data;
+
+        Header header = null;
         if(mJsonReader.nextName().equals(mContext.getString(R.string.header))){
             mJsonReader.beginObject();
-            int n = 0, o = 0;
+            int totalData = 0, totalDataNoCategory = 0;
             if (mJsonReader.nextName().equals(mContext.getString(R.string.total_data)))
-                n = mJsonReader.nextInt();
+                totalData = mJsonReader.nextInt();
             if (mJsonReader.nextName().equals(mContext.getString(R.string.total_data_no_category)))
-                o = mJsonReader.nextInt();
-            Log.d(Constant.LOG, " masuk sini !!! " + n + " " + o);
+                totalDataNoCategory = mJsonReader.nextInt();
+            header = new Header(totalData, totalDataNoCategory);
+            Log.d(Constant.LOG+"_"+TAG+"_"+Header.TAG, header.toString());
             mJsonReader.endObject();
         }
+        rets[HEADER] = header;
+
+        Category category = null;
         if(mJsonReader.nextName().equals(mContext.getString(R.string.category))){
             mJsonReader.beginObject();
+            category = new Category();
+            Log.d(Constant.LOG+"_"+TAG+"_"+Category.TAG, "start creating "+Category.TAG);
+
             if(mJsonReader.nextName().equals(mContext.getString(R.string.data))){
                 mJsonReader.beginObject();
                 while(mJsonReader.hasNext()&&mJsonReader.nextName()!=null){
                     mJsonReader.beginObject();
+
+                    // create object
+                    Category.Data data1 = new Category.Data();
+
+                    String id = null, name = null, totalData = null;
+                    int parentId = 0, level = 0;
+                    // use list because there is not info about the length
+                    List<Integer> childId = null;
                     if (mJsonReader.nextName().equals(mContext.getString(R.string.id)))
-                        mJsonReader.nextString();
+                        id = mJsonReader.nextString();
                     if (mJsonReader.nextName().equals(mContext.getString(R.string.name)))
-                        mJsonReader.nextString();
+                        name = mJsonReader.nextString();
                     if (mJsonReader.nextName().equals(mContext.getString(R.string.total_data)))
-                        mJsonReader.nextString();
+                        totalData =mJsonReader.nextString();
                     if (mJsonReader.nextName().equals(mContext.getString(R.string.parent_id)))
-                        mJsonReader.nextInt();
+                        parentId =mJsonReader.nextInt();
                     if (mJsonReader.nextName().equals(mContext.getString(R.string.child_id))) {
                         if(mJsonReader.peek() != JsonToken.NULL ){
                             mJsonReader.beginArray();
+                            // create childId object
+                            childId = new ArrayList<>();
                             while(mJsonReader.hasNext()){
-                                mJsonReader.nextInt();
+                                int temp = mJsonReader.nextInt();
+                                childId.add(temp);// add child id
                             }
                             mJsonReader.endArray();
                         }else{
+                            // skip if there is no value
                             mJsonReader.skipValue();
                         }
-
                     }
                     if (mJsonReader.nextName().equals(mContext.getString(R.string.level)))
-                        mJsonReader.nextInt();
+                        level = mJsonReader.nextInt();
+
+                    data1.setChildId(childId);
+                    data1.setId(id);
+                    data1.setLevel(level);
+                    data1.setName(name);
+                    data1.setParentId(parentId);
+                    data1.setTotalData(totalData);
+
+                    // add to the main container
+                    category.addData(data1);
+
                     mJsonReader.endObject();
                 }
                 mJsonReader.endObject();
+                String selectedId = null;
                 if (mJsonReader.nextName().equals(mContext.getString(R.string.selected_id)))
-                    mJsonReader.nextString();
+                    selectedId = mJsonReader.nextString();
+                category.setSelectedId(selectedId);
+
             }
+            rets[CATEGORY] = category;
+            Log.d(Constant.LOG+"_"+TAG+"_"+Category.TAG, "end creating "+Category.TAG);
             mJsonReader.endObject();
         }
+
+        Filter filter = null;
         if(mJsonReader.nextName().equals(mContext.getString(R.string.filter))){
             mJsonReader.beginObject();
+            filter = new Filter();
             if(mJsonReader.nextName().equals(mContext.getString(R.string.q))){
-                mJsonReader.nextString();
+                String q = mJsonReader.nextString();
+                filter.setQuery(q);
             }
+            rets[FILTER] = filter;
             mJsonReader.endObject();
         }
         mJsonReader.endObject();

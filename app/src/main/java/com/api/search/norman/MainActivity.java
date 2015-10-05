@@ -15,7 +15,7 @@ import com.api.search.norman.utils.JsonUtils;
 
 import java.io.IOException;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements Constant.JsonUtilsConstant{
 
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
@@ -27,7 +27,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         Object[] rets = null;
         try {
-            rets = new JsonUtils().getStatus(this);
+            rets = JsonUtils.getJsonDataFromAssets(this);
             Log.d(Constant.LOG, rets.length+"");
 
             // gunakan rets[1] sebagai data
@@ -46,7 +46,7 @@ public class MainActivity extends Activity {
         mRecyclerView.setLayoutManager(mLayoutManager);
 
         // specify an adapter (see also next example)
-        mAdapter = new InnerDataAdapter((Data)rets[1]);
+        mAdapter = new InnerDataAdapter((Data)rets[DATA]);
         mRecyclerView.setAdapter(mAdapter);
     }
 
