@@ -35,19 +35,17 @@ public class JsonUtils implements  Constant.JsonUtilsConstant{
         Status status = new Status();
         if(mJsonReader.nextName().equals(mContext.getString(R.string.status))){
             mJsonReader.beginObject();
-            String d = null;
-            int b = 0;
-            String a = mJsonReader.nextName();
-            if(a.equals(mContext.getString(R.string.error_code)))
-                b = mJsonReader.nextInt();
-            String c = mJsonReader.nextName();
-            if(c.equals(mContext.getString(R.string.message)))
-                d = mJsonReader.nextString();
+            String message = null;
+            int errorCode = 0;
+            if(mJsonReader.nextName().equals(mContext.getString(R.string.error_code)))
+                errorCode = mJsonReader.nextInt();
+            if(mJsonReader.nextName().equals(mContext.getString(R.string.message)))
+                message = mJsonReader.nextString();
 
-            status.setError_code(b);
-            status.setMessage(d);
+            status.setError_code(errorCode);
+            status.setMessage(message);
 
-            Log.d(Constant.LOG, " masuk sini !!! " + a + " " + b + " " + c + " " + d);// +mJsonReader.nextName()+""+mJsonReader.nextName()
+            Log.d(Constant.LOG, " masuk sini !!! " + errorCode + " " + message);
             mJsonReader.endObject();
             rets[STATUS] = status;
         }

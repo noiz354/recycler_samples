@@ -17,7 +17,8 @@ public class FactoryHelper {
     private static JsonReader mJsonReader;
 
     protected static Reader getJsonExample(Context mContext) throws IOException{
-        return new InputStreamReader(mContext.getAssets().open("data.json"),"UTF-8");
+//        return new InputStreamReader(mContext.getAssets().open("data.json"),"UTF-8");
+        return new InputStreamReader(mContext.getAssets().open("data_05_10_2015.json"),"UTF-8");
     }
 
     protected static JsonReader onJsonReaderCreate(Reader reader){

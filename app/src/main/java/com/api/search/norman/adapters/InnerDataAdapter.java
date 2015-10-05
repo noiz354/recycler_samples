@@ -20,23 +20,43 @@ public class InnerDataAdapter extends RecyclerView.Adapter<InnerDataAdapter.View
         this.data = data;
     }
 
+    public void addHeaderView(View view) {
+        this.mView = view;
+    }
+
     private Data data;
+    private final int TYPE_HEADER = 0;
+    private final int TYPE_CHILD = 1;
+    private View mView;
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
-        View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.recycler_test, viewGroup, false);
-        ViewHolder vh = new ViewHolder(v);
-        return vh;
+        if (mView != null && i == TYPE_HEADER) {
+            return new ViewHolder(mView);
+        }else {
+            View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.recycler_test, viewGroup, false);
+            ViewHolder vh = new ViewHolder(v);
+            return vh;
+        }
     }
 
     @Override
     public void onBindViewHolder(ViewHolder viewHolder, int i) {
+        if (viewHolder.getItemViewType() == TYPE_HEADER) return;
+        if (mView != null) {
+            i = i - 1;
+        }
         viewHolder.mTextView.setText(data.getDatas().get(i).getId()+" "+data.getDatas().get(i).getImageUri());
     }
 
     @Override
     public int getItemCount() {
-        return data.getDatas().size();
+        return mView != null ? data.getDatas().size() + 1 : data.getDatas().size();
+    }
+
+    @Override
+    public int getItemViewType(int position) {
+        return position == 0 ? TYPE_HEADER : TYPE_CHILD;
     }
 
     // Provide a reference to the views for each data item
