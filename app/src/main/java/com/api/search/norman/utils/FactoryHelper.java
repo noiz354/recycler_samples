@@ -26,4 +26,12 @@ public class FactoryHelper {
             mJsonReader = new JsonReader(reader);
         return  mJsonReader;
     }
+
+    public static boolean onJsonReaderClose(){
+        if(mJsonReader == null)
+            return false;
+
+        mJsonReader = null;
+        return true;
+    }
 }

@@ -3,18 +3,26 @@ package com.api.search.norman;
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.annotation.NonNull;
+import android.support.v4.app.NavUtils;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.SearchView;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AbsListView;
+import android.widget.Toast;
 
 import com.api.search.norman.adapters.InnerDataAdapter;
 import com.api.search.norman.models.Data;
 import com.api.search.norman.utils.Constant;
+import com.api.search.norman.utils.FactoryHelper;
 import com.api.search.norman.utils.JsonUtils;
 import com.nineoldandroids.view.ViewPropertyAnimator;
 
@@ -22,7 +30,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends Activity implements Constant.JsonUtilsConstant{
+public class MainActivity extends AppCompatActivity implements Constant.JsonUtilsConstant{
 
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
@@ -30,6 +38,8 @@ public class MainActivity extends Activity implements Constant.JsonUtilsConstant
     private int mFlexibleSpaceOffset;
     private boolean mHeaderIsShown;
     View mHeader;
+
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +53,8 @@ public class MainActivity extends Activity implements Constant.JsonUtilsConstant
             // gunakan rets[1] sebagai data
         } catch (IOException e) {
             e.printStackTrace();
+        }finally{
+            FactoryHelper.onJsonReaderClose();
         }
 
         // translation value
@@ -53,6 +65,11 @@ public class MainActivity extends Activity implements Constant.JsonUtilsConstant
         setupRecyclerView(returnJson);
 
         ((InnerDataAdapter)mAdapter).addHeaderView(paddingView);
+
+        toolbar = (Toolbar) findViewById(R.id.tool_bar); // Attaching the layout to the toolbar object
+        toolbar.setNavigationIcon(R.mipmap.my_avatar);
+        setSupportActionBar(toolbar);
+
     }
 
     @NonNull
@@ -190,8 +207,28 @@ public class MainActivity extends Activity implements Constant.JsonUtilsConstant
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
+        seachMenuItem = menu.findItem(R.id.action_search);
+        mSearchView = (SearchView) seachMenuItem.getActionView();
+        mSearchView.setOnQueryTextListener(listener);
         return true;
     }
+
+    MenuItem seachMenuItem;
+    SearchView mSearchView;
+
+    SearchView.OnQueryTextListener listener = new SearchView.OnQueryTextListener() {
+        @Override
+        public boolean onQueryTextSubmit(String query) {
+            return false;
+        }
+
+        @Override
+        public boolean onQueryTextChange(String newText) {
+            // newText is text entered by user to SearchView
+            Toast.makeText(getApplicationContext(), newText, Toast.LENGTH_LONG).show();
+            return false;
+        }
+    };
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -202,6 +239,12 @@ public class MainActivity extends Activity implements Constant.JsonUtilsConstant
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            return true;
+        }
+
+        if(id == android.R.id.home){
+            Log.d("MNORMANSYAH", "kok gak kepanggil ya???");
+            MainActivity.this.finish();
             return true;
         }
 
