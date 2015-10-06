@@ -1,0 +1,348 @@
+{
+   "status":"OK",
+   "config":null,
+   "server_process_time":"0.008329",
+   "data":{
+      "search_url":"https://ajax.tokopedia.com/search/v1/catalog?device=android\u0026q=iphone\u0026rows=1000",
+      "share_url":"https://www.tokopedia.com/search?q=iphone\u0026st=catalog",
+      "paging":{
+         "uri_next":"",
+         "uri_previous":""
+      },
+      "st":"catalog",
+      "total_record":33,
+      "catalogs":[
+         {
+            "catalog_id":50387,
+            "catalog_name":"Apple iPhone 6s Plus - GSM - 128 GB",
+            "catalog_price":"Rp. 16.190.001",
+            "catalog_uri":"https://www.tokopedia.com/catalog/50387/apple-iphone-6s-plus---gsm---128-gb",
+            "catalog_image":"https://ecs7.tokopedia.net/img/cache/200-square/catalog/2015/9/28/3454752/3454752_3c7e17cc-a54b-4f35-a53b-092e843868b9.png",
+            "catalog_image_300":"https://ecs7.tokopedia.net/img/cache/300/catalog/2015/9/28/3454752/3454752_3c7e17cc-a54b-4f35-a53b-092e843868b9.png",
+            "catalog_description":"Apple iPhone 6s Plus adalah sebuah smartphone yang mampu merubah segalanya. Hadir dengan terobosan desain terbaru berbahan aluminium seri 7000 dan 4 pilihan warna yakni Space Gray, Silver, Gold dan Rose Gold yang berbeda dengan sebelumnya. Dilengkapi dengan 3D Touch yang merupakan generasi terbaru dari layar multi touch. Tidak hanya tap, swipe dan pinch yang dapat Anda lakukan pada layar, dengan 3D touch Anda bisa melakukan peek and pop yang membuat segalanya menjadi mudah. Kamera 12 megapiksel dengan kemampuan merekam video beresolusi 4K mampu menghasilkan foto dengan detail yang memukau pada setiap pikselnya. Abadikan pula foto selfie Anda dengan kualitas yang luar biasa dengan kamera depan beresolusi 5 megapiksel. Selain itu iPhone 6s Plus pun hadir dengan performa yang lebih baik. Chipset Apple A9 dengan arsitektur 64 bit yang disematkan didalamnya memberikan peningkatan performa hingga 70% dari seri sebelumnya. iphone 6s Plus benar-benar memberikan pengelaman yang berbeda dibandingkan smartphone lainnya.",
+            "catalog_count_product":29
+         },
+         {
+            "catalog_id":50385,
+            "catalog_name":"Apple iPhone 6s Plus - GSM - 16 GB",
+            "catalog_price":"Rp. 12.500.000",
+            "catalog_uri":"https://www.tokopedia.com/catalog/50385/apple-iphone-6s-plus---gsm---16-gb",
+            "catalog_image":"https://ecs7.tokopedia.net/img/cache/200-square/catalog/2015/9/28/3454752/3454752_8f14e565-f073-4222-9cc7-a5f67ae02ce0.png",
+            "catalog_image_300":"https://ecs7.tokopedia.net/img/cache/300/catalog/2015/9/28/3454752/3454752_8f14e565-f073-4222-9cc7-a5f67ae02ce0.png",
+            "catalog_description":"Apple iPhone 6s Plus adalah sebuah smartphone yang mampu merubah segalanya. Hadir dengan terobosan desain terbaru berbahan aluminium seri 7000 dan 4 pilihan warna yakni Space Gray, Silver, Gold dan Rose Gold yang berbeda dengan sebelumnya. Dilengkapi dengan 3D Touch yang merupakan generasi terbaru dari layar multi touch. Tidak hanya tap, swipe dan pinch yang dapat Anda lakukan pada layar, dengan 3D touch Anda bisa melakukan peek and pop yang membuat segalanya menjadi mudah. Kamera 12 megapiksel dengan kemampuan merekam video beresolusi 4K mampu menghasilkan foto dengan detail yang memukau pada setiap pikselnya. Abadikan pula foto selfie Anda dengan kualitas yang luar biasa dengan kamera depan beresolusi 5 megapiksel. Selain itu iPhone 6s Plus pun hadir dengan performa yang lebih baik. Chipset Apple A9 dengan arsitektur 64 bit yang disematkan didalamnya memberikan peningkatan performa hingga 70% dari seri sebelumnya. iphone 6s Plus benar-benar memberikan pengelaman yang berbeda dibandingkan smartphone lainnya.",
+            "catalog_count_product":28
+         },
+         {
+            "catalog_id":50386,
+            "catalog_name":"Apple iPhone 6s Plus - GSM - 64 GB",
+            "catalog_price":"Rp. 14.489.999",
+            "catalog_uri":"https://www.tokopedia.com/catalog/50386/apple-iphone-6s-plus---gsm---64-gb",
+            "catalog_image":"https://ecs7.tokopedia.net/img/cache/200-square/catalog/2015/9/28/3454752/3454752_29245101-f278-40fa-98e1-6516c3a558e1.png",
+            "catalog_image_300":"https://ecs7.tokopedia.net/img/cache/300/catalog/2015/9/28/3454752/3454752_29245101-f278-40fa-98e1-6516c3a558e1.png",
+            "catalog_description":"Apple iPhone 6s Plus adalah sebuah smartphone yang mampu merubah segalanya. Hadir dengan terobosan desain terbaru berbahan aluminium seri 7000 dan 4 pilihan warna yakni Space Gray, Silver, Gold dan Rose Gold yang berbeda dengan sebelumnya. Dilengkapi dengan 3D Touch yang merupakan generasi terbaru dari layar multi touch. Tidak hanya tap, swipe dan pinch yang dapat Anda lakukan pada layar, dengan 3D touch Anda bisa melakukan peek and pop yang membuat segalanya menjadi mudah. Kamera 12 megapiksel dengan kemampuan merekam video beresolusi 4K mampu menghasilkan foto dengan detail yang memukau pada setiap pikselnya. Abadikan pula foto selfie Anda dengan kualitas yang luar biasa dengan kamera depan beresolusi 5 megapiksel. Selain itu iPhone 6s Plus pun hadir dengan performa yang lebih baik. Chipset Apple A9 dengan arsitektur 64 bit yang disematkan didalamnya memberikan peningkatan performa hingga 70% dari seri sebelumnya. iphone 6s Plus benar-benar memberikan pengelaman yang berbeda dibandingkan smartphone lainnya.",
+            "catalog_count_product":28
+         },
+         {
+            "catalog_id":50388,
+            "catalog_name":"Apple iPhone 6s - GSM - 16 GB",
+            "catalog_price":"Rp. 10.400.000",
+            "catalog_uri":"https://www.tokopedia.com/catalog/50388/apple-iphone-6s---gsm---16-gb",
+            "catalog_image":"https://ecs7.tokopedia.net/img/cache/200-square/catalog/2015/9/28/3454752/3454752_a9d88c3b-053b-4540-95fe-9d6f1c1d34b0.png",
+            "catalog_image_300":"https://ecs7.tokopedia.net/img/cache/300/catalog/2015/9/28/3454752/3454752_a9d88c3b-053b-4540-95fe-9d6f1c1d34b0.png",
+            "catalog_description":"Apple iPhone 6s adalah sebuah smartphone yang mampu merubah segalanya. Hadir dengan terobosan desain terbaru berbahan aluminium seri 7000 dan 4 pilihan warna yakni Space Gray, Silver, Gold dan Rose Gold yang berbeda dengan sebelumnya. Dilengkapi dengan 3D Touch yang merupakan generasi terbaru dari layar multi touch. Tidak hanya tap, swipe dan pinch yang dapat Anda lakukan pada layar, dengan 3D touch Anda bisa melakukan peek and pop yang membuat segalanya menjadi mudah. Kamera 12 megapiksel dengan kemampuan merekam video beresolusi 4K mampu menghasilkan foto dengan detail yang memukau pada setiap pikselnya. Abadikan pula foto selfie Anda dengan kualitas yang luar biasa dengan kamera depan beresolusi 5 megapiksel. Selain itu iPhone 6s pun hadir dengan performa yang lebih baik. Chipset Apple A9 dengan arsitektur 64 bit yang disematkan didalamnya memberikan peningkatan performa hingga 70% dari seri sebelumnya. iphone 6s benar-benar memberikan pengelaman yang berbeda dibandingkan smartphone lainnya.",
+            "catalog_count_product":53
+         },
+         {
+            "catalog_id":50389,
+            "catalog_name":"Apple iPhone 6s - GSM - 64 GB",
+            "catalog_price":"Rp. 12.350.001",
+            "catalog_uri":"https://www.tokopedia.com/catalog/50389/apple-iphone-6s---gsm---64-gb",
+            "catalog_image":"https://ecs7.tokopedia.net/img/cache/200-square/catalog/2015/9/28/3454752/3454752_00602722-3c91-4e43-b365-00ed3c70b444.png",
+            "catalog_image_300":"https://ecs7.tokopedia.net/img/cache/300/catalog/2015/9/28/3454752/3454752_00602722-3c91-4e43-b365-00ed3c70b444.png",
+            "catalog_description":"Apple iPhone 6s adalah sebuah smartphone yang mampu merubah segalanya. Hadir dengan terobosan desain terbaru berbahan aluminium seri 7000 dan 4 pilihan warna yakni Space Gray, Silver, Gold dan Rose Gold yang berbeda dengan sebelumnya. Dilengkapi dengan 3D Touch yang merupakan generasi terbaru dari layar multi touch. Tidak hanya tap, swipe dan pinch yang dapat Anda lakukan pada layar, dengan 3D touch Anda bisa melakukan peek and pop yang membuat segalanya menjadi mudah. Kamera 12 megapiksel dengan kemampuan merekam video beresolusi 4K mampu menghasilkan foto dengan detail yang memukau pada setiap pikselnya. Abadikan pula foto selfie Anda dengan kualitas yang luar biasa dengan kamera depan beresolusi 5 megapiksel. Selain itu iPhone 6s pun hadir dengan performa yang lebih baik. Chipset Apple A9 dengan arsitektur 64 bit yang disematkan didalamnya memberikan peningkatan performa hingga 70% dari seri sebelumnya. iphone 6s benar-benar memberikan pengelaman yang berbeda dibandingkan smartphone lainnya.",
+            "catalog_count_product":64
+         },
+         {
+            "catalog_id":50390,
+            "catalog_name":"Apple iPhone 6s - GSM - 128 GB",
+            "catalog_price":"Rp. 13.689.999",
+            "catalog_uri":"https://www.tokopedia.com/catalog/50390/apple-iphone-6s---gsm---128-gb",
+            "catalog_image":"https://ecs7.tokopedia.net/img/cache/200-square/catalog/2015/9/28/3454752/3454752_20a76e12-52dd-418f-b133-92e9d77596c8.png",
+            "catalog_image_300":"https://ecs7.tokopedia.net/img/cache/300/catalog/2015/9/28/3454752/3454752_20a76e12-52dd-418f-b133-92e9d77596c8.png",
+            "catalog_description":"Apple iPhone 6s adalah sebuah smartphone yang mampu merubah segalanya. Hadir dengan terobosan desain terbaru berbahan aluminium seri 7000 dan 4 pilihan warna yakni Space Gray, Silver, Gold dan Rose Gold yang berbeda dengan sebelumnya. Dilengkapi dengan 3D Touch yang merupakan generasi terbaru dari layar multi touch. Tidak hanya tap, swipe dan pinch yang dapat Anda lakukan pada layar, dengan 3D touch Anda bisa melakukan peek and pop yang membuat segalanya menjadi mudah. Kamera 12 megapiksel dengan kemampuan merekam video beresolusi 4K mampu menghasilkan foto dengan detail yang memukau pada setiap pikselnya. Abadikan pula foto selfie Anda dengan kualitas yang luar biasa dengan kamera depan beresolusi 5 megapiksel. Selain itu iPhone 6s pun hadir dengan performa yang lebih baik. Chipset Apple A9 dengan arsitektur 64 bit yang disematkan didalamnya memberikan peningkatan performa hingga 70% dari seri sebelumnya. iphone 6s benar-benar memberikan pengelaman yang berbeda dibandingkan smartphone lainnya.",
+            "catalog_count_product":40
+         },
+         {
+            "catalog_id":43801,
+            "catalog_name":"Apple iPhone 6 - GSM - 128 GB",
+            "catalog_price":"Rp. 3.000.000",
+            "catalog_uri":"https://www.tokopedia.com/catalog/43801/apple-iphone-6---gsm---128-gb",
+            "catalog_image":"https://ecs7.tokopedia.net/img/cache/200-square/catalog/2015/8/10/3454752/3454752_f3f4bdd1-9ae3-40ae-b055-455be3bf7676.png",
+            "catalog_image_300":"https://ecs7.tokopedia.net/img/cache/300/catalog/2015/8/10/3454752/3454752_f3f4bdd1-9ae3-40ae-b055-455be3bf7676.png",
+            "catalog_description":"Apple iPhone 6 adalah generasi terbaru dari iPhone. Memiliki ukuran layar 4.7 inchi, membuatnya jauh lebih luas dengan resolusi 750p. Apple iPhone 6 menggunakan chipset Apple A8 64bit dengan M8 motion coprocessor, performa lebih cepat dan lebih gagas dengan sensor yang lebih canggih. Tidak lupa Apple iPhone 6 sudah menggunakan iOS 8 terbaru.",
+            "catalog_count_product":72
+         },
+         {
+            "catalog_id":43802,
+            "catalog_name":"Apple iPhone 6 Plus - GSM - 16 GB",
+            "catalog_price":"Rp. 9.200.000",
+            "catalog_uri":"https://www.tokopedia.com/catalog/43802/apple-iphone-6-plus---gsm---16-gb",
+            "catalog_image":"https://ecs7.tokopedia.net/img/cache/200-square/catalog/2014/9/10/43802/43802_dc149c54-38b4-11e4-9a9d-87622523fab8.jpg",
+            "catalog_image_300":"https://ecs7.tokopedia.net/img/cache/300/catalog/2014/9/10/43802/43802_dc149c54-38b4-11e4-9a9d-87622523fab8.jpg",
+            "catalog_description":"Apple iPhone 6 Plus adalah generasi terbaru dari iPhone. Memiliki ukuran layar 5.5 inchi, membuatnya jauh lebih luas dengan resolusi 1080p. Apple iPhone 6 Plus menggunakan chipset Apple A8 64bit dengan M8 motion coprocessor, performa lebih cepat dan lebih gagas dengan sensor yang lebih canggih. Tidak lupa Apple iPhone 6 Plus sudah menggunakan iOS 8 terbaru.",
+            "catalog_count_product":102
+         },
+         {
+            "catalog_id":43803,
+            "catalog_name":"Apple iPhone 6 Plus - GSM - 64 GB",
+            "catalog_price":"Rp. 9.830.000",
+            "catalog_uri":"https://www.tokopedia.com/catalog/43803/apple-iphone-6-plus---gsm---64-gb",
+            "catalog_image":"https://ecs12.tokopedia.net/newimg/cache/200-square/catalog/2014/9/10/43803/43803_e87489dc-38b4-11e4-811f-41c84908a8c2.jpg",
+            "catalog_image_300":"https://ecs12.tokopedia.net/newimg/cache/300/catalog/2014/9/10/43803/43803_e87489dc-38b4-11e4-811f-41c84908a8c2.jpg",
+            "catalog_description":"Apple iPhone 6 Plus adalah generasi terbaru dari iPhone. Memiliki ukuran layar 5.5 inchi, membuatnya jauh lebih luas dengan resolusi 1080p. Apple iPhone 6 Plus menggunakan chipset Apple A8 64bit dengan M8 motion coprocessor, performa lebih cepat dan lebih gagas dengan sensor yang lebih canggih. Tidak lupa Apple iPhone 6 Plus sudah menggunakan iOS 8 terbaru.",
+            "catalog_count_product":89
+         },
+         {
+            "catalog_id":43799,
+            "catalog_name":"Apple iPhone 6 - GSM - 16 GB",
+            "catalog_price":"Rp. 8.000.000",
+            "catalog_uri":"https://www.tokopedia.com/catalog/43799/apple-iphone-6---gsm---16-gb",
+            "catalog_image":"https://ecs7.tokopedia.net/img/cache/200-square/catalog/2015/8/10/3454752/3454752_47468543-224a-427d-9c59-8aaf94b2da7c.png",
+            "catalog_image_300":"https://ecs7.tokopedia.net/img/cache/300/catalog/2015/8/10/3454752/3454752_47468543-224a-427d-9c59-8aaf94b2da7c.png",
+            "catalog_description":"Apple iPhone 6 adalah generasi terbaru dari iPhone. Memiliki ukuran layar 4.7 inchi, membuatnya jauh lebih luas dengan resolusi 750p. Apple iPhone 6 menggunakan chipset Apple A8 64bit dengan M8 motion coprocessor, performa lebih cepat dan lebih gagas dengan sensor yang lebih canggih. Tidak lupa Apple iPhone 6 sudah menggunakan iOS 8 terbaru.",
+            "catalog_count_product":157
+         },
+         {
+            "catalog_id":43804,
+            "catalog_name":"Apple iPhone 6 Plus - GSM - 128 GB",
+            "catalog_price":"Rp. 10.000.000",
+            "catalog_uri":"https://www.tokopedia.com/catalog/43804/apple-iphone-6-plus---gsm---128-gb",
+            "catalog_image":"https://ecs12.tokopedia.net/newimg/cache/200-square/catalog/2014/9/10/43804/43804_ef8fd802-38b4-11e4-97b6-1ac84908a8c2.jpg",
+            "catalog_image_300":"https://ecs12.tokopedia.net/newimg/cache/300/catalog/2014/9/10/43804/43804_ef8fd802-38b4-11e4-97b6-1ac84908a8c2.jpg",
+            "catalog_description":"Apple iPhone 6 Plus adalah generasi terbaru dari iPhone. Memiliki ukuran layar 5.5 inchi, membuatnya jauh lebih luas dengan resolusi 1080p. Apple iPhone 6 Plus menggunakan chipset Apple A8 64bit dengan M8 motion coprocessor, performa lebih cepat dan lebih gagas dengan sensor yang lebih canggih. Tidak lupa Apple iPhone 6 Plus sudah menggunakan iOS 8 terbaru.",
+            "catalog_count_product":81
+         },
+         {
+            "catalog_id":43800,
+            "catalog_name":"Apple iPhone 6 - GSM - 64 GB",
+            "catalog_price":"Rp. 9.500.000",
+            "catalog_uri":"https://www.tokopedia.com/catalog/43800/apple-iphone-6---gsm---64-gb",
+            "catalog_image":"https://ecs7.tokopedia.net/img/cache/200-square/catalog/2015/8/10/3454752/3454752_a453e84e-351b-4eec-9381-74afaee1df0c.png",
+            "catalog_image_300":"https://ecs7.tokopedia.net/img/cache/300/catalog/2015/8/10/3454752/3454752_a453e84e-351b-4eec-9381-74afaee1df0c.png",
+            "catalog_description":"Apple iPhone 6 adalah generasi terbaru dari iPhone. Memiliki ukuran layar 4.7 inchi, membuatnya jauh lebih luas dengan resolusi 750p. Apple iPhone 6 menggunakan chipset Apple A8 64bit dengan M8 motion coprocessor, performa lebih cepat dan lebih gagas dengan sensor yang lebih canggih. Tidak lupa Apple iPhone 6 sudah menggunakan iOS 8 terbaru.",
+            "catalog_count_product":117
+         },
+         {
+            "catalog_id":41275,
+            "catalog_name":"Apple iPhone 5C - GSM - 32 GB",
+            "catalog_price":"Rp. 3.310.000",
+            "catalog_uri":"https://www.tokopedia.com/catalog/41275/apple-iphone-5c---gsm---32-gb",
+            "catalog_image":"https://ecs2.tokopedia.net/img/cache/200-square/catalog/2013/9/17/41275/41275_9892757c-1f4d-11e3-850c-3d4e2523fab8.jpg",
+            "catalog_image_300":"https://ecs2.tokopedia.net/img/cache/300/catalog/2013/9/17/41275/41275_9892757c-1f4d-11e3-850c-3d4e2523fab8.jpg",
+            "catalog_description":"Salah satu update terbaru dari smartphone Apple. Update dari generasi sebelumnya yaitu iPhone 5.\nDidesain dengan desain yang menarik dengan pilihan warna casing yang cukup banyak.\nTetap mengusung teknologi canggih seperti seri sebelumnya, 1 GB RAM, 8 MP kamera, Apple A6 processor, dan tidak lupa dukungan iOS versi terbaru yaitu iOS 7.0",
+            "catalog_count_product":24
+         },
+         {
+            "catalog_id":41278,
+            "catalog_name":"Apple iPhone 5S - GSM - 64 GB",
+            "catalog_price":"Rp. 5.770.000",
+            "catalog_uri":"https://www.tokopedia.com/catalog/41278/apple-iphone-5s---gsm---64-gb",
+            "catalog_image":"https://ecs2.tokopedia.net/img/cache/200-square/catalog/2013/9/17/41278/41278_d1ba45ae-1f4e-11e3-aeda-a7622523fab8.jpg",
+            "catalog_image_300":"https://ecs2.tokopedia.net/img/cache/300/catalog/2013/9/17/41278/41278_d1ba45ae-1f4e-11e3-aeda-a7622523fab8.jpg",
+            "catalog_description":"Generasi terbaru dari iPhone 5. iPhone 5s menawarkan spesifikasi yang lebih tinggi dari seri sebelumnya.\nSudah mengusung processor terbaru dari Apple, Apple A7. Dilengkapi juga dengan fingerprint sensor \u0026#40;Touch ID\u0026#41; sehingga membuat Apple 5s ini semakin personal dengan pemiliknya.",
+            "catalog_count_product":67
+         },
+         {
+            "catalog_id":41277,
+            "catalog_name":"Apple iPhone 5S - GSM - 32 GB",
+            "catalog_price":"Rp. 4.900.000",
+            "catalog_uri":"https://www.tokopedia.com/catalog/41277/apple-iphone-5s---gsm---32-gb",
+            "catalog_image":"https://ecs2.tokopedia.net/img/cache/200-square/catalog/2013/9/17/41277/41277_c904ed7e-1f4e-11e3-9b9c-50622523fab8.jpg",
+            "catalog_image_300":"https://ecs2.tokopedia.net/img/cache/300/catalog/2013/9/17/41277/41277_c904ed7e-1f4e-11e3-9b9c-50622523fab8.jpg",
+            "catalog_description":"Generasi terbaru dari iPhone 5. iPhone 5s menawarkan spesifikasi yang lebih tinggi dari seri sebelumnya.\nSudah mengusung processor terbaru dari Apple, Apple A7. Dilengkapi juga dengan fingerprint sensor \u0026#40;Touch ID\u0026#41; sehingga membuat Apple 5s ini semakin personal dengan pemiliknya.",
+            "catalog_count_product":120
+         },
+         {
+            "catalog_id":41274,
+            "catalog_name":"Apple iPhone 5C - GSM - 16 GB",
+            "catalog_price":"Rp. 2.799.000",
+            "catalog_uri":"https://www.tokopedia.com/catalog/41274/apple-iphone-5c---gsm---16-gb",
+            "catalog_image":"https://ecs2.tokopedia.net/img/cache/200-square/catalog/2013/9/17/41274/41274_9c3fde36-1f4c-11e3-8285-e9c12523fab8.jpg",
+            "catalog_image_300":"https://ecs2.tokopedia.net/img/cache/300/catalog/2013/9/17/41274/41274_9c3fde36-1f4c-11e3-8285-e9c12523fab8.jpg",
+            "catalog_description":"Salah satu update terbaru dari smartphone Apple. Update dari generasi sebelumnya yaitu iPhone 5.\nDidesain dengan desain yang menarik dengan pilihan warna casing yang cukup banyak.\nTetap mengusung teknologi canggih seperti seri sebelumnya, 1 GB RAM, 8 MP kamera, Apple A6 processor, dan tidak lupa dukungan iOS versi terbaru yaitu iOS 7.0",
+            "catalog_count_product":80
+         },
+         {
+            "catalog_id":41276,
+            "catalog_name":"Apple iPhone 5S - GSM - 16 GB",
+            "catalog_price":"Rp. 4.710.000",
+            "catalog_uri":"https://www.tokopedia.com/catalog/41276/apple-iphone-5s---gsm---16-gb",
+            "catalog_image":"https://ecs2.tokopedia.net/img/cache/200-square/catalog/2013/9/17/41276/41276_b4c3c79a-1f4e-11e3-b1f0-a7622523fab8.jpg",
+            "catalog_image_300":"https://ecs2.tokopedia.net/img/cache/300/catalog/2013/9/17/41276/41276_b4c3c79a-1f4e-11e3-b1f0-a7622523fab8.jpg",
+            "catalog_description":"Generasi terbaru dari iPhone 5. iPhone 5s menawarkan spesifikasi yang lebih tinggi dari seri sebelumnya.\nSudah mengusung processor terbaru dari Apple, Apple A7. Dilengkapi juga dengan fingerprint sensor \u0026#40;Touch ID\u0026#41; sehingga membuat Apple 5s ini semakin personal dengan pemiliknya.",
+            "catalog_count_product":206
+         },
+         {
+            "catalog_id":7558,
+            "catalog_name":"Apple iPhone 5 - 64 GB",
+            "catalog_price":"Rp. 3.750.000",
+            "catalog_uri":"https://www.tokopedia.com/catalog/7558/apple-iphone-5---64-gb",
+            "catalog_image":"https://ecs12.tokopedia.net/newimg/cache/200-square/catalog/2013/4/30/7558/7558-386ac40a-b15d-11e2-b0c6-0d4f2523fab8.jpg",
+            "catalog_image_300":"https://ecs12.tokopedia.net/newimg/cache/300/catalog/2013/4/30/7558/7558-386ac40a-b15d-11e2-b0c6-0d4f2523fab8.jpg",
+            "catalog_description":"Iphone 5 adalah adalah smartphone terbaru yang dikeluarkan oleh Apple. Iphone 5 yang berjalan pada sistem operasi IOS 6 ini telah mendukung jaringan 4G LTE, kamera dengan teknologi \"Isight\" yang memiliki resolusi sebesar 8 megapiksel dengan berbagai fitur fotografi canggih seperti backside illumination, hybrid IR filter, dan five-element lens dn a f2.4 aperture. Selain itu Iphone 5 juga memiliki daya tahan baterai yang sangat baik dan mampu bertahan untuk 8 jam video call, 8 jam browsing dengan jaringan 3G, 8 jam browsing dengan jaringan LTE, 10 jam browsing dengan wifi, 10 jam menonton video dan 40 jam untuk mendengarkan lagu.",
+            "catalog_count_product":91
+         },
+         {
+            "catalog_id":7556,
+            "catalog_name":"Apple iPhone 5 - 16 GB",
+            "catalog_price":"Rp. 3.000.000",
+            "catalog_uri":"https://www.tokopedia.com/catalog/7556/apple-iphone-5---16-gb",
+            "catalog_image":"https://ecs7.tokopedia.net/img/cache/200-square/catalog/2013/4/30/7556/7556-573aea86-b15d-11e2-b089-064f2523fab8.jpg",
+            "catalog_image_300":"https://ecs7.tokopedia.net/img/cache/300/catalog/2013/4/30/7556/7556-573aea86-b15d-11e2-b089-064f2523fab8.jpg",
+            "catalog_description":"Iphone 5 adalah adalah smartphone terbaru yang dikeluarkan oleh Apple. Iphone 5 yang berjalan pada sistem operasi IOS 6 ini telah mendukung jaringan 4G LTE, kamera dengan teknologi \"Isight\" yang memiliki resolusi sebesar 8 megapiksel dengan berbagai fitur fotografi canggih seperti backside illumination, hybrid IR filter, dan five-element lens dn a f2.4 aperture. Selain itu Iphone 5 juga memiliki daya tahan baterai yang sangat baik dan mampu bertahan untuk 8 jam video call, 8 jam browsing dengan jaringan 3G, 8 jam browsing dengan jaringan LTE, 10 jam browsing dengan wifi, 10 jam menonton video dan 40 jam untuk mendengarkan lagu.",
+            "catalog_count_product":234
+         },
+         {
+            "catalog_id":7557,
+            "catalog_name":"Apple iPhone 5 - 32 GB",
+            "catalog_price":"Rp. 3.550.000",
+            "catalog_uri":"https://www.tokopedia.com/catalog/7557/apple-iphone-5---32-gb",
+            "catalog_image":"https://ecs12.tokopedia.net/newimg/cache/200-square/catalog/2013/4/30/7557/7557-4839dbaa-b15d-11e2-a47d-064f2523fab8.jpg",
+            "catalog_image_300":"https://ecs12.tokopedia.net/newimg/cache/300/catalog/2013/4/30/7557/7557-4839dbaa-b15d-11e2-a47d-064f2523fab8.jpg",
+            "catalog_description":"Iphone 5 adalah adalah smartphone terbaru yang dikeluarkan oleh Apple. Iphone 5 yang berjalan pada sistem operasi IOS 6 ini telah mendukung jaringan 4G LTE, kamera dengan teknologi \"Isight\" yang memiliki resolusi sebesar 8 megapiksel dengan berbagai fitur fotografi canggih seperti backside illumination, hybrid IR filter, dan five-element lens dn a f2.4 aperture. Selain itu Iphone 5 juga memiliki daya tahan baterai yang sangat baik dan mampu bertahan untuk 8 jam video call, 8 jam browsing dengan jaringan 3G, 8 jam browsing dengan jaringan LTE, 10 jam browsing dengan wifi, 10 jam menonton video dan 40 jam untuk mendengarkan lagu.",
+            "catalog_count_product":138
+         },
+         {
+            "catalog_id":75,
+            "catalog_name":"Apple iPhone 4S 64 GB",
+            "catalog_price":"Rp. 2.240.000",
+            "catalog_uri":"https://www.tokopedia.com/catalog/75/apple-iphone-4s-64-gb",
+            "catalog_image":"https://ecs7.tokopedia.net/img/cache/200-square/catalog/2013/4/30/75/75-42f3e59a-b15e-11e2-8e55-064f2523fab8.jpg",
+            "catalog_image_300":"https://ecs7.tokopedia.net/img/cache/300/catalog/2013/4/30/75/75-42f3e59a-b15e-11e2-8e55-064f2523fab8.jpg",
+            "catalog_description":"Iphone 4S dipersenjatai dengan prosesor dual-core A5 chip yang memiliki kecepatan lebih kencang. Kamera 8 megapiksel dengan lensa versi baru yang mampu merekam video 1080p HD, serta fitur asisten canggih bernama Siri. Ini adalah sebuah ponsel terbaik dari Apple.",
+            "catalog_count_product":85
+         },
+         {
+            "catalog_id":73,
+            "catalog_name":"Apple iPhone 4S 16 GB",
+            "catalog_price":"Rp. 1.650.000",
+            "catalog_uri":"https://www.tokopedia.com/catalog/73/apple-iphone-4s-16-gb",
+            "catalog_image":"https://ecs7.tokopedia.net/img/cache/200-square/catalog/2013/4/30/73/73-a154c320-b15e-11e2-a7d8-064f2523fab8.jpg",
+            "catalog_image_300":"https://ecs7.tokopedia.net/img/cache/300/catalog/2013/4/30/73/73-a154c320-b15e-11e2-a7d8-064f2523fab8.jpg",
+            "catalog_description":"Iphone 4S dipersenjatai dengan prosesor dual-core A5 chip yang memiliki kecepatan lebih kencang. Kamera 8 megapiksel dengan lensa versi baru yang mampu merekam video 1080p HD, serta fitur asisten canggih bernama Siri. Ini adalah sebuah ponsel terbaik dari Apple.",
+            "catalog_count_product":254
+         },
+         {
+            "catalog_id":74,
+            "catalog_name":"Apple iPhone 4S 32 GB",
+            "catalog_price":"Rp. 1.800.000",
+            "catalog_uri":"https://www.tokopedia.com/catalog/74/apple-iphone-4s-32-gb",
+            "catalog_image":"https://ecs7.tokopedia.net/img/cache/200-square/catalog/2013/4/30/74/74-90a6a2b4-b15e-11e2-bbbb-1d4f2523fab8.jpg",
+            "catalog_image_300":"https://ecs7.tokopedia.net/img/cache/300/catalog/2013/4/30/74/74-90a6a2b4-b15e-11e2-bbbb-1d4f2523fab8.jpg",
+            "catalog_description":"Iphone 4S dipersenjatai dengan prosesor dual-core A5 chip yang memiliki kecepatan lebih kencang. Kamera 8 megapiksel dengan lensa versi baru yang mampu merekam video 1080p HD, serta fitur asisten canggih bernama Siri. Ini adalah sebuah ponsel terbaik dari Apple.",
+            "catalog_count_product":155
+         },
+         {
+            "catalog_id":64,
+            "catalog_name":"Apple iPhone 4 32 GB",
+            "catalog_price":"Rp. 1.360.000",
+            "catalog_uri":"https://www.tokopedia.com/catalog/64/apple-iphone-4-32-gb",
+            "catalog_image":"https://ecs7.tokopedia.net/img/cache/200-square/catalog/2013/4/30/64/64-604b0e4a-b166-11e2-b757-6ca72523fab8.jpg",
+            "catalog_image_300":"https://ecs7.tokopedia.net/img/cache/300/catalog/2013/4/30/64/64-604b0e4a-b166-11e2-b757-6ca72523fab8.jpg",
+            "catalog_description":"Iphone 4 adalah sebuah smartphone dengan layar beresolusi tinggi, Facetime video calling, perekam video HD, kamera 5 megapiksel, danmasih banyak lagi.",
+            "catalog_count_product":121
+         },
+         {
+            "catalog_id":63,
+            "catalog_name":"Apple iPhone 4 16 GB",
+            "catalog_price":"Rp. 945.000",
+            "catalog_uri":"https://www.tokopedia.com/catalog/63/apple-iphone-4-16-gb",
+            "catalog_image":"https://ecs12.tokopedia.net/newimg/cache/200-square/catalog/2013/4/30/63/63-8b9c93ac-b166-11e2-a736-6ca72523fab8.jpg",
+            "catalog_image_300":"https://ecs12.tokopedia.net/newimg/cache/300/catalog/2013/4/30/63/63-8b9c93ac-b166-11e2-a736-6ca72523fab8.jpg",
+            "catalog_description":"Iphone 4 adalah sebuah smartphone dengan layar beresolusi tinggi, Facetime video calling, perekam video HD, kamera 5 megapiksel, danmasih banyak lagi.",
+            "catalog_count_product":173
+         },
+         {
+            "catalog_id":66,
+            "catalog_name":"Apple iPhone 3GS 16 GB",
+            "catalog_price":"Rp. 1.280.000",
+            "catalog_uri":"https://www.tokopedia.com/catalog/66/apple-iphone-3gs-16-gb",
+            "catalog_image":"https://ecs12.tokopedia.net/newimg/cache/200-square/catalog/2013/4/30/66/66-321f3bdc-b165-11e2-b93d-6ca72523fab8.jpg",
+            "catalog_image_300":"https://ecs12.tokopedia.net/newimg/cache/300/catalog/2013/4/30/66/66-321f3bdc-b165-11e2-b93d-6ca72523fab8.jpg",
+            "catalog_description":"iPhone 3GS adalah sebuah smartphone yang memiliki 3-megapixel camera, voice control, multitasking, folders, dan masih banyak lagi.",
+            "catalog_count_product":7
+         },
+         {
+            "catalog_id":67,
+            "catalog_name":"Apple iPhone 3GS 32 GB",
+            "catalog_price":"Rp. 1.380.000",
+            "catalog_uri":"https://www.tokopedia.com/catalog/67/apple-iphone-3gs-32-gb",
+            "catalog_image":"https://ecs12.tokopedia.net/newimg/cache/200-square/catalog/2013/4/30/67/67-8c590616-b163-11e2-83ad-947c2523fab8.jpg",
+            "catalog_image_300":"https://ecs12.tokopedia.net/newimg/cache/300/catalog/2013/4/30/67/67-8c590616-b163-11e2-83ad-947c2523fab8.jpg",
+            "catalog_description":"iPhone 3GS adalah sebuah smartphone yang memiliki 3-megapixel camera, voice control, multitasking, folders, dan masih banyak lagi.",
+            "catalog_count_product":11
+         },
+         {
+            "catalog_id":65,
+            "catalog_name":"Apple iPhone 3GS 8 GB",
+            "catalog_price":"",
+            "catalog_uri":"https://www.tokopedia.com/catalog/65/apple-iphone-3gs-8-gb",
+            "catalog_image":"https://ecs12.tokopedia.net/newimg/cache/200-square/catalog/2013/4/30/65/65-77e5eb84-b165-11e2-83ae-61a72523fab8.jpg",
+            "catalog_image_300":"https://ecs12.tokopedia.net/newimg/cache/300/catalog/2013/4/30/65/65-77e5eb84-b165-11e2-83ae-61a72523fab8.jpg",
+            "catalog_description":"iPhone 3GS adalah sebuah smartphone yang memiliki 3-megapixel camera, voice control, multitasking, folders, dan masih banyak lagi.",
+            "catalog_count_product":0
+         },
+         {
+            "catalog_id":68,
+            "catalog_name":"Apple iPhone 3G 8 GB",
+            "catalog_price":"Rp. 1.075.000",
+            "catalog_uri":"https://www.tokopedia.com/catalog/68/apple-iphone-3g-8-gb",
+            "catalog_image":"https://ecs12.tokopedia.net/newimg/cache/200-square/catalog/2013/4/30/68/68-324403d4-b162-11e2-bba1-6d7c2523fab8.jpg",
+            "catalog_image_300":"https://ecs12.tokopedia.net/newimg/cache/300/catalog/2013/4/30/68/68-324403d4-b162-11e2-bba1-6d7c2523fab8.jpg",
+            "catalog_description":"Perkenalkanlah Iphone 3G, dengan teknologi wireless 3G yang super cepat, peta GPS, mendukung berbagai fitur enterprise seperti microsoft exchange, App Store terbaru, Iphone 3G ini memberikan berbagai macam fitur hanya dengan sentuhan jari. Sebuah resolusi in menggabungkan 3 product menjadi satu, sebuah hanphone canggih, Ipod berlayar lebar, dan device penjelajah internet yang mendukung email HTML dan browser kelas desktop.",
+            "catalog_count_product":4
+         },
+         {
+            "catalog_id":69,
+            "catalog_name":"Apple iPhone 3G 16 GB",
+            "catalog_price":"Rp. 1.050.000",
+            "catalog_uri":"https://www.tokopedia.com/catalog/69/apple-iphone-3g-16-gb",
+            "catalog_image":"https://ecs7.tokopedia.net/img/cache/200-square/catalog/2013/4/30/69/69-224fec7c-b162-11e2-a2c7-027d2523fab8.jpg",
+            "catalog_image_300":"https://ecs7.tokopedia.net/img/cache/300/catalog/2013/4/30/69/69-224fec7c-b162-11e2-a2c7-027d2523fab8.jpg",
+            "catalog_description":"Perkenalkanlah Iphone 3G, dengan teknologi wireless 3G yang super cepat, peta GPS, mendukung berbagai fitur enterprise seperti microsoft exchange, App Store terbaru, Iphone 3G ini memberikan berbagai macam fitur hanya dengan sentuhan jari. Sebuah resolusi in menggabungkan 3 product menjadi satu, sebuah hanphone canggih, Ipod berlayar lebar, dan device penjelajah internet yang mendukung email HTML dan browser kelas desktop.",
+            "catalog_count_product":4
+         },
+         {
+            "catalog_id":71,
+            "catalog_name":"Apple iPhone 8 GB",
+            "catalog_price":"Rp. 1.300.000",
+            "catalog_uri":"https://www.tokopedia.com/catalog/71/apple-iphone-8-gb",
+            "catalog_image":"https://ecs7.tokopedia.net/img/cache/200-square/catalog/2013/4/30/71/71-a8fc361a-b160-11e2-8476-6d7c2523fab8.jpg",
+            "catalog_image_300":"https://ecs7.tokopedia.net/img/cache/300/catalog/2013/4/30/71/71-a8fc361a-b160-11e2-8476-6d7c2523fab8.jpg",
+            "catalog_description":"Iphone adalah sebuah resolusi dalam dunia mobile phone. Menawarkan berbagai kemudahan berkat layar sentuh berukuran 3.5 inchi yang memiliki resolusi 640 x 960 pixels sehingga gambar yang ditampilkan akan sangat jernih. Untuk medukung performa yang maksimal, Iphone 4 menggunakan processor Apple A4 dan RAM 512 MB.",
+            "catalog_count_product":37
+         },
+         {
+            "catalog_id":72,
+            "catalog_name":"Apple iPhone 16 GB",
+            "catalog_price":"Rp. 1.300.000",
+            "catalog_uri":"https://www.tokopedia.com/catalog/72/apple-iphone-16-gb",
+            "catalog_image":"https://ecs12.tokopedia.net/newimg/cache/200-square/catalog/2013/4/30/72/72-9899af50-b160-11e2-a632-027d2523fab8.jpg",
+            "catalog_image_300":"https://ecs12.tokopedia.net/newimg/cache/300/catalog/2013/4/30/72/72-9899af50-b160-11e2-a632-027d2523fab8.jpg",
+            "catalog_description":"Iphone adalah sebuah resolusi dalam dunia mobile phone. Menawarkan berbagai kemudahan berkat layar sentuh berukuran 3.5 inchi yang memiliki resolusi 640 x 960 pixels sehingga gambar yang ditampilkan akan sangat jernih. Untuk medukung performa yang maksimal, Iphone 4 menggunakan processor Apple A4 dan RAM 512 MB.",
+            "catalog_count_product":35
+         },
+         {
+            "catalog_id":70,
+            "catalog_name":"Apple iPhone 4 GB",
+            "catalog_price":"Rp. 1.240.000",
+            "catalog_uri":"https://www.tokopedia.com/catalog/70/apple-iphone-4-gb",
+            "catalog_image":"https://ecs12.tokopedia.net/newimg/cache/200-square/catalog/2013/4/30/70/70-bbe84228-b160-11e2-84cb-6d7c2523fab8.jpg",
+            "catalog_image_300":"https://ecs12.tokopedia.net/newimg/cache/300/catalog/2013/4/30/70/70-bbe84228-b160-11e2-84cb-6d7c2523fab8.jpg",
+            "catalog_description":"Iphone adalah sebuah resolusi dalam dunia mobile phone. Menawarkan berbagai kemudahan berkat layar sentuh berukuran 3.5 inchi yang memiliki resolusi 640 x 960 pixels sehingga gambar yang ditampilkan akan sangat jernih. Untuk medukung performa yang maksimal, Iphone 4 menggunakan processor Apple A4 dan RAM 512 MB.",
+            "catalog_count_product":24
+         }
+      ],
+      "has_catalog":1
+   }
+}

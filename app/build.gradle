@@ -27,4 +27,5 @@ dependencies {
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'com.android.support:appcompat-v7:23.0.1'
     compile 'com.balysv:material-ripple:1.0.2'
+    compile 'it.sephiroth.android.library.floatingmenu:floatingmenu:1.0.1'
 }
