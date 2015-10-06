@@ -60,16 +60,24 @@ public class MainActivity extends AppCompatActivity implements Constant.JsonUtil
         // translation value
         mFlexibleSpaceOffset = getResources().getDimensionPixelSize(R.dimen.header_height);
 
+        // header that attach to framelayout
         mHeader = findViewById(R.id.view_header);
-        View paddingView = setupHeaderView();
+
+        // create recyclerview
         setupRecyclerView(returnJson);
 
+        // add headerview
+        View paddingView = setupHeaderView();
         ((InnerDataAdapter)mAdapter).addHeaderView(paddingView);
 
+        // replacement of actionbar
+        setupToolbar();
+    }
+
+    private void setupToolbar() {
         toolbar = (Toolbar) findViewById(R.id.tool_bar); // Attaching the layout to the toolbar object
         toolbar.setNavigationIcon(R.mipmap.my_avatar);
         setSupportActionBar(toolbar);
-
     }
 
     @NonNull
@@ -122,7 +130,6 @@ public class MainActivity extends AppCompatActivity implements Constant.JsonUtil
     }
 
     abstract class EndlessRecyclerOnScrollListener extends RecyclerView.OnScrollListener{
-//        public static final String TAG = EndlessRecyclerOnScrollListener.class.getSimpleName();
 
         private int previousTotal = 0; // The total number of items in the dataset after the last load
         private boolean loading = true; // True if we are still waiting for the last set of data to load.
@@ -243,7 +250,6 @@ public class MainActivity extends AppCompatActivity implements Constant.JsonUtil
         }
 
         if(id == android.R.id.home){
-            Log.d("MNORMANSYAH", "kok gak kepanggil ya???");
             MainActivity.this.finish();
             return true;
         }

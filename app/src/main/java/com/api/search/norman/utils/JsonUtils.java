@@ -164,11 +164,6 @@ public class JsonUtils implements  Constant.JsonUtilsConstant{
                         aPrice.setCount_max(countMax);
                         aPrice.setPrice(anoprice);
 
-                        // TODO remove this if WholesalePrice.Price works
-//                        List<WholesalePrice.Price> prices = wholesalePrice.getPrices();
-//                        prices.add(aPrice);
-//                        wholesalePrice.setPrices(prices);
-
                         wholesalePrice.addPrice(aPrice);
 
                         Log.d(Constant.LOG + separator + WholesalePrice.TAG, countMin+" "+countMax+" "+p);
@@ -179,11 +174,6 @@ public class JsonUtils implements  Constant.JsonUtilsConstant{
                 }
                 innerData.setWholesalePrice(wholesalePrice);
                 mJsonReader.endObject();
-
-                // TODO remove this if works
-//                List<Data.InnerData> tmp = data.getDatas();
-//                tmp.add(innerData);
-//                data.setDatas(tmp);
 
                 data.addData(innerData);
             }
