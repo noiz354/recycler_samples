@@ -1,5 +1,6 @@
 package com.api.search.norman.adapters;
 
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -54,12 +55,14 @@ public class InnerDataAdapter extends RecyclerView.Adapter<InnerDataAdapter.View
             i = i - 1;
         }
         // set data here
+        Context context = viewHolder.prodName.getContext();
+
         if(data.getDatas().get(i).getName()!=null)
-            viewHolder.prodName.setText(viewHolder.prodName.getText()+data.getDatas().get(i).getName());
+            viewHolder.prodName.setText(context.getString(R.string.prod_name)+data.getDatas().get(i).getName());
         if(data.getDatas().get(i).getShop().getName()!=null)
-            viewHolder.prodShopName.setText(viewHolder.prodShopName.getText()+" : "+data.getDatas().get(i).getShop().getName());
+            viewHolder.prodShopName.setText(context.getString(R.string.prod_shop_name)+data.getDatas().get(i).getShop().getName());
         if(data.getDatas().get(i).getPrice()!=null)
-            viewHolder.prodPrice.setText(viewHolder.prodPrice.getText()+" : "+data.getDatas().get(i).getPrice());
+            viewHolder.prodPrice.setText(context.getString(R.string.prod_price)+data.getDatas().get(i).getPrice());
         Picasso.with(viewHolder.prodImg.getContext()).load(data.getDatas().get(i).getImageUri()).error(R.mipmap.my_avatar).into(viewHolder.prodImg);
 
     }
